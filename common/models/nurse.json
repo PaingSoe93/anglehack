@@ -1,0 +1,44 @@
+{
+  "name": "nurse",
+  "plural": "nurses",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "nurse_role": {
+      "type": "string"
+    },
+    "avaliable": {
+      "type": "string"
+    },
+    "off-day": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

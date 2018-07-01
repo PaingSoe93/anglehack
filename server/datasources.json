@@ -1,0 +1,12 @@
+{
+  "mongodb": {
+    "host": "ds123181.mlab.com",
+    "port": 23181,
+    "url": "mongodb://admin:root123@ds123181.mlab.com:23181/nurse",
+    "database": "nurse",
+    "password": "root123",
+    "name": "mongodb",
+    "user": "admin",
+    "connector": "mongodb"
+  }
+}

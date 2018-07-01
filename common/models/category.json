@@ -1,0 +1,37 @@
+{
+  "name": "category",
+  "plural": "categories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "icon_name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "subcategories": {
+      "type": "hasMany",
+      "model": "subcategory",
+      "foreignKey": "category_id"
+    },
+    "information": {
+      "type": "hasMany",
+      "model": "information",
+      "foreignKey": "category_id"
+    },
+    "nurses": {
+      "type": "hasMany",
+      "model": "nurse",
+      "foreignKey": "category_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

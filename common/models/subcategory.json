@@ -1,0 +1,29 @@
+{
+  "name": "subcategory",
+  "plural": "subcategories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "nurses": {
+      "type": "hasMany",
+      "model": "nurse",
+      "foreignKey": "subcategory_id"
+    },
+    "information": {
+      "type": "hasMany",
+      "model": "information",
+      "foreignKey": "subcategory_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
